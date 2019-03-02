@@ -1,0 +1,19 @@
+.icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon{
+    margin: 10px;
+  }
+  
+  .socialicon{
+    margin-right:10px
+
+  }
+  .first{
+    background-color: #004080;
+    color: white;
+  
+  }

@@ -1,0 +1,52 @@
+{
+    "title": "Hello , I'm Saeed Qanbarzadeh",
+    "subtitle" : "React Beginner | Designer ",
+    "links":{
+        "github" : "https://www.github.com/ghanbarzadeh.s",
+        "instagram" : "https://www.instagram.com/ghanbarzadeh.s"
+
+    },
+
+    "sections" : [
+        {
+            "title": "About",
+            "items": [
+                {
+                    "types" : "p",
+                    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+                }
+            ]
+        },
+        {
+            "title": "skills",
+            "items": [
+                {
+                    "type" : "card",
+                    "content" : {
+                        "image" : "./html.png",
+                        "title ": "javascript"
+                    }                
+                },
+                {
+                    "type" : "card",
+                    "content" : {
+                        "image" : "./css.svg",
+                        "title ": "css"
+
+                    }                
+                },
+                {
+                    "type" : "card",
+                    "content" : {
+                        "image" : "./javascript.png",
+                        "title ": "html"
+                    }                
+                }
+            ]
+        }
+    
+    ],
+    "icons" : {
+        "down": "./sort-down.png"
+    }
+}
