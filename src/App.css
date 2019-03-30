@@ -3,6 +3,7 @@ body{
   height: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -11,10 +12,14 @@ body{
   flex-direction: column;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  background-color: blue
+  background-color: blue;
+  padding: 0;
+  margin: 0;
 }
 
 .fullpage {
+  padding: 0;
+  margin: 0;
   height: 100vh;
   width: 100vw;
   display: flex;

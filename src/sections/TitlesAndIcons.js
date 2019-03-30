@@ -4,36 +4,24 @@ import data from '../data.json';
 import { SocialIcon } from 'react-social-icons';
 import './TitlesAndIcons.css';
 import DownIcon from '../components/DownIcon';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { SSL_OP_SINGLE_DH_USE } from 'constants';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 class TitlesAndIcons extends Component{
-  state ={
-    color:'white'
-  }
-  changeColor () {
-      this.setState({
-        color:this.state.color === 'white' ?'yellow' : 'white'
-      })
-  }
+  constructor(props){
+    super(props);
+    this.state = {
+        color : "#004080"
+    };
+
+}
+
     render() {
         return(
           <div>
-            <Fullpage className= "first">
+            <Fullpage className= "first" style={{background : this.props.color}}>
             <div >
-                  <h1 className="title"
-                  style={{
-                    color:this.state.color
-                  }}
-                    onMouseOver= {()=> {
-                      this.changeColor()
-                    }}
-                    onMouseLeave={()=>{
-                      this.changeColor()
-                    }}
->
-                   {data.title} </h1>
+                  <h1 className="title" >{data.title} </h1>
                   <h3 className="title"> {data.subtitle} </h3>
                   <div className="icon-wrapper">
                   {

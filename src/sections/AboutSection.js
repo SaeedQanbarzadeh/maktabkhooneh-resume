@@ -6,12 +6,21 @@ import DownIcon from '../components/DownIcon';
 import { Link, Element  } from 'react-scroll';
 
 class AboutSection extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            color : "#004080"
+        };
+
+    }
+
     render() {
         return(
             <div>
-            <Fullpage className= "second" id="second">
+            <Fullpage className= "second" style={{background : this.props.color}} id="second">
               <h3>{data.sections[0].title}</h3>
-              <div className="paragraph">
+              <div className="paragraph"           >
                   {data.sections[0].items.map(p=>{
                    return <p>{p.content}</p>
                    })}

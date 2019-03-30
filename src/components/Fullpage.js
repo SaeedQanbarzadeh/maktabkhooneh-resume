@@ -5,7 +5,7 @@ class Fullpage extends Component{
     render() {
         const{ children } = this.props
         return(
-            <div className= { `fullpage ${this.props.className || ''}`}>
+            <div style={this.props.style} className= { `fullpage ${this.props.className || ''}`}>
                 {children}
             </div>
         )

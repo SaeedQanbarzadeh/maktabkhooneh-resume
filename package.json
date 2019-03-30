@@ -2,6 +2,7 @@
   "name": "resumefinal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://989iran.github.com/resumefinal",
   "dependencies": {
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
@@ -11,6 +12,8 @@
     "react-snowstorm": "0.0.3"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -26,6 +29,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-social-icons": "^4.1.0"
   }
 }

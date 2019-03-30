@@ -8,7 +8,7 @@ import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } 
 class SkillSection extends Component{
     render() {
         return(
-            <Fullpage className= "third">
+            <Fullpage className= "third" style={{background : this.props.color}}>
                 <h3>{data.sections[1].title}</h3>
                 <div className="cards-wrapper">
                     {
