@@ -24,6 +24,7 @@ class App extends Component {
       ]
     }
   }
+
   pickRandomColor = () => {
     let {colors} = this.state;
     let rand = Math.floor(Math.random() * colors.length);
@@ -57,7 +58,7 @@ class App extends Component {
         </div>
     </div>
     
-    );
+    )
   }
 }
 
